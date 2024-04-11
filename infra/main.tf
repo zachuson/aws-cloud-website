@@ -64,7 +64,7 @@ resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_iam_role" {
 
 data "archive_file" "zip" {
     type        = "zip"
-    source_dir  = "${path.module}/lambda/"
+    source_dir  = "${path.module}/lambda_func/"
     output_path = "${path.module}/packedlambda.zip"
 }
 
