@@ -26,6 +26,7 @@ jobs:
         run: pytest
 
   terraform-plan-and-apply:
+    #needs: test-infra
     name: "Terraform Init, Plan, and Apply"
     runs-on: ubuntu-latest
     env:
